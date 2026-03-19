@@ -106,7 +106,7 @@ Claude Code는 작업하면서 대화를 로컬에 저장한다. 각 메시지, 
 - [git worktrees](https://code.claude.com/docs/ko/common-workflows#run-parallel-claude-code-sessions-with-git-worktrees)로 개별 브랜치에 별도 디렉토리를 만들어 병렬 세션을 실행할 수 있다.
 
 ### 세션 재개 및 포크
-![session-continuity](claude-code-basic/Assets/session-continuity.svg)
+![session-continuity](Assets/session-continuity.svg)
 
 - **재개**: `claude --continue` 또는 `claude --resume` - 중단한 지점부터 계속한다. 대화 기록은 복원되지만 세션 범위 권한은 복원되지 않는다.
 - **포크**: `claude --continue --fork-session` - 대화 기록을 유지하면서 새 세션 ID를 만든다. 원본 세션은 변경되지 않는다.
