@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "claude-code-basic/how-claude-code-works.md",
+                "file": "claude-code-basic/extend-claude-code.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "how-claude-code-works"
+              "title": "extend-claude-code"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "claude-code-basic/how-claude-code-works.md",
+                "file": "claude-code-basic/extend-claude-code.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "how-claude-code-works 의 백링크"
+              "title": "extend-claude-code 의 백링크"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "claude-code-basic/how-claude-code-works.md",
+                "file": "claude-code-basic/extend-claude-code.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "how-claude-code-works 의 나가는 링크"
+              "title": "extend-claude-code 의 나가는 링크"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "claude-code-basic/how-claude-code-works.md",
+                "file": "claude-code-basic/extend-claude-code.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "how-claude-code-works 의 개요"
+              "title": "extend-claude-code 의 개요"
             }
           }
         ]
@@ -185,14 +185,19 @@
   },
   "active": "91c58f880a9031d6",
   "lastOpenFiles": [
+    "claude-code-basic/Assets/context-loading.svg",
+    "claude-code-basic/how-claude-code-works.md",
+    "cheatsheet/skills-cheatsheet.md",
+    "claude-code-basic/extend-claude-code.md",
+    "cheatsheet/sub-agents-cheatsheet.md",
+    "README.md",
+    "cheatsheet",
     "claude-code-basic/Assets/session-continuity.svg",
     "claude-code-basic/Assets/미확인 422611.crdownload",
     "claude-code-basic/model-config.md",
-    "claude-code-basic/how-claude-code-works.md",
     "모델 구성.md",
     "claude-code-basic/Assets/agentic-loop.svg",
     "claude-code-basic/Assets/미확인 417525.crdownload",
-    "claude-code-basic/Assets",
-    "README.md"
+    "claude-code-basic/Assets"
   ]
 }
