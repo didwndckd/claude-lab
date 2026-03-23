@@ -34,12 +34,12 @@ my-plugin/
 
 ### 매니페스트 (`plugin.json`) 필수 필드
 
-| 필드 | 설명 | 예시 |
-| :--- | :--- | :--- |
-| `name` | 고유 식별자, skill 네임스페이스로 사용 | `"my-plugin"` |
-| `description` | 플러그인 관리자에 표시되는 설명 | `"A greeting plugin"` |
-| `version` | 시맨틱 버전 | `"1.0.0"` |
-| `author` | 작성자 정보 (선택) | `{"name": "Your Name"}` |
+| 필드            | 설명                       | 예시                      |
+| :------------ | :----------------------- | :---------------------- |
+| `name`        | 고유 식별자, skill 네임스페이스로 사용 | `"my-plugin"`           |
+| `description` | 플러그인 관리자에 표시되는 설명        | `"A greeting plugin"`   |
+| `version`     | 시맨틱 버전                   | `"1.0.0"`               |
+| `author`      | 작성자 정보 (선택)              | `{"name": "Your Name"}` |
 
 ### settings.json
 

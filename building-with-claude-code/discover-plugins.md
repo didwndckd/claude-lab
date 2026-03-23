@@ -33,14 +33,14 @@
 
 ### 마켓플레이스 소스 유형
 
-| 소스 | 형식 | 예시 |
-|------|------|------|
-| GitHub | `owner/repo` | `anthropics/claude-code` |
-| Git URL (HTTPS) | 전체 URL | `https://gitlab.com/company/plugins.git` |
-| Git URL (SSH) | SSH URL | `git@gitlab.com:company/plugins.git` |
-| Git + 특정 ref | URL`#ref` | `https://gitlab.com/company/plugins.git#v1.0.0` |
-| 로컬 경로 | 디렉토리 또는 파일 경로 | `./my-marketplace` |
-| 원격 URL | `marketplace.json` URL | `https://example.com/marketplace.json` |
+| 소스              | 형식                     | 예시                                              |
+| --------------- | ---------------------- | ----------------------------------------------- |
+| GitHub          | `owner/repo`           | `anthropics/claude-code`                        |
+| Git URL (HTTPS) | 전체 URL                 | `https://gitlab.com/company/plugins.git`        |
+| Git URL (SSH)   | SSH URL                | `git@gitlab.com:company/plugins.git`            |
+| Git + 특정 ref    | URL`#ref`              | `https://gitlab.com/company/plugins.git#v1.0.0` |
+| 로컬 경로           | 디렉토리 또는 파일 경로          | `./my-marketplace`                              |
+| 원격 URL          | `marketplace.json` URL | `https://example.com/marketplace.json`          |
 
 ### 코드 인텔리전스 지원 언어
 

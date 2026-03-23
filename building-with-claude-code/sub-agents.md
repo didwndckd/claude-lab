@@ -47,21 +47,21 @@ Subagent는 **YAML frontmatter가 있는 Markdown 파일**로 정의한다.
 
 ### Frontmatter 필드
 
-| 필드 | 필수 | 설명 | 기본값 |
-|:--|:--|:--|:--|
-| `name` | O | 고유 식별자 (소문자, 하이픈) | - |
-| `description` | O | Claude가 위임 시기를 결정하는 설명 | - |
-| `tools` | X | 사용 가능한 도구 목록. 생략 시 모든 도구 상속 | 모든 도구 |
-| `disallowedTools` | X | 거부할 도구 목록 | - |
-| `model` | X | `sonnet` / `opus` / `haiku` / `inherit` | `inherit` |
-| `permissionMode` | X | 권한 모드 | `default` |
-| `maxTurns` | X | 최대 에이전트 턴 수 | - |
-| `skills` | X | 시작 시 컨텍스트에 로드할 skill 목록 | - |
-| `mcpServers` | X | 사용 가능한 MCP 서버 | - |
-| `hooks` | X | 라이프사이클 hook 정의. 도구 실행 전후 검문소 역할. stdin으로 JSON 수신, exit 0=통과, exit 2=차단 | - |
-| `memory` | X | 지속적 메모리 범위: `user` / `project` / `local` | - |
-| `background` | X | 항상 백그라운드로 실행 (`true`/`false`) | `false` |
-| `isolation` | X | `worktree` 설정 시 임시 git worktree에서 실행. 변경 없으면 자동 정리 | - |
+| 필드                | 필수  | 설명                                                                     | 기본값       |
+| :---------------- | :-- | :--------------------------------------------------------------------- | :-------- |
+| `name`            | O   | 고유 식별자 (소문자, 하이픈)                                                      | -         |
+| `description`     | O   | Claude가 위임 시기를 결정하는 설명                                                 | -         |
+| `tools`           | X   | 사용 가능한 도구 목록. 생략 시 모든 도구 상속                                            | 모든 도구     |
+| `disallowedTools` | X   | 거부할 도구 목록                                                              | -         |
+| `model`           | X   | `sonnet` / `opus` / `haiku` / `inherit`                                | `inherit` |
+| `permissionMode`  | X   | 권한 모드                                                                  | `default` |
+| `maxTurns`        | X   | 최대 에이전트 턴 수                                                            | -         |
+| `skills`          | X   | 시작 시 컨텍스트에 로드할 skill 목록                                                | -         |
+| `mcpServers`      | X   | 사용 가능한 MCP 서버                                                          | -         |
+| `hooks`           | X   | 라이프사이클 hook 정의. 도구 실행 전후 검문소 역할. stdin으로 JSON 수신, exit 0=통과, exit 2=차단 | -         |
+| `memory`          | X   | 지속적 메모리 범위: `user` / `project` / `local`                               | -         |
+| `background`      | X   | 항상 백그라운드로 실행 (`true`/`false`)                                          | `false`   |
+| `isolation`       | X   | `worktree` 설정 시 임시 git worktree에서 실행. 변경 없으면 자동 정리                     | -         |
 
 ### 권한 모드 (permissionMode)
 

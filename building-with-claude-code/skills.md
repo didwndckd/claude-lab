@@ -48,18 +48,18 @@ my-skill/
 
 `SKILL.md` 상단 `---` 사이에 YAML로 작성한다. **모든 필드는 선택 사항**이며 `description`만 권장한다.
 
-| 필드 | 설명 | 기본값 |
-|------|------|--------|
-| `name` | 표시 이름 (`/slash-command`가 됨). 소문자, 숫자, 하이픈만 가능 (최대 64자) | 디렉토리 이름 |
-| `description` | 수행 내용과 사용 시기. Claude가 자동 호출 판단에 사용 | 본문 첫 단락 |
-| `argument-hint` | 자동완성에서 보이는 인수 힌트 (예: `[issue-number]`) | - |
-| `disable-model-invocation` | `true`면 Claude 자동 호출 차단. 수동 트리거만 허용 | `false` |
-| `user-invocable` | `false`면 `/` 메뉴에서 숨김. 배경 지식용 | `true` |
-| `allowed-tools` | skill 활성 시 권한 요청 없이 사용 가능한 도구 목록 | - |
-| `model` | skill 활성 시 사용할 모델 | - |
-| `context` | `fork`로 설정하면 subagent에서 실행 | - |
-| `agent` | `context: fork` 시 사용할 subagent 유형 (`Explore`, `Plan`, `general-purpose` 또는 커스텀) | `general-purpose` |
-| `hooks` | skill 라이프사이클에 범위 지정된 hooks | - |
+| 필드                         | 설명                                                                              | 기본값               |
+| -------------------------- | ------------------------------------------------------------------------------- | ----------------- |
+| `name`                     | 표시 이름 (`/slash-command`가 됨). 소문자, 숫자, 하이픈만 가능 (최대 64자)                          | 디렉토리 이름           |
+| `description`              | 수행 내용과 사용 시기. Claude가 자동 호출 판단에 사용                                              | 본문 첫 단락           |
+| `argument-hint`            | 자동완성에서 보이는 인수 힌트 (예: `[issue-number]`)                                          | -                 |
+| `disable-model-invocation` | `true`면 Claude 자동 호출 차단. 수동 트리거만 허용                                             | `false`           |
+| `user-invocable`           | `false`면 `/` 메뉴에서 숨김. 배경 지식용                                                    | `true`            |
+| `allowed-tools`            | skill 활성 시 권한 요청 없이 사용 가능한 도구 목록                                                | -                 |
+| `model`                    | skill 활성 시 사용할 모델                                                               | -                 |
+| `context`                  | `fork`로 설정하면 subagent에서 실행                                                      | -                 |
+| `agent`                    | `context: fork` 시 사용할 subagent 유형 (`Explore`, `Plan`, `general-purpose` 또는 커스텀) | `general-purpose` |
+| `hooks`                    | skill 라이프사이클에 범위 지정된 hooks                                                      | -                 |
 
 ### 호출 제어 조합
 
