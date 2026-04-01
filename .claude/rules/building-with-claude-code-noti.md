@@ -1,5 +1,5 @@
 ---
-path:
+paths:
   - "building-with-claude-code/**"
 ---
 

@@ -1,5 +1,5 @@
 ---
-path:
+paths:
   - "claude-code-basic/**"
 ---
 
