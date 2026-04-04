@@ -1,6 +1,6 @@
 # .claude 디렉토리 구조
 
-> 원본: [Explore the .claude directory](https://code.claude.com/docs/en/claude-directory)
+> https://code.claude.com/docs/en/claude-directory
 
 ## 기본 개념
 
