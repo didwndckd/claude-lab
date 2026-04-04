@@ -36,13 +36,13 @@ my-skill/
 
 ## 번들 Skills
 
-| Skill | 설명 | 사용 예시 |
-|-------|------|----------|
-| `/simplify` | 변경된 코드를 재사용/품질/효율성 관점에서 검토 후 수정. 3개 검토 에이전트를 병렬 생성 | `/simplify focus on memory efficiency` |
-| `/batch <instruction>` | 대규모 변경을 병렬로 조율. 5~30개 단위로 분해 후 각각 격리된 worktree에서 실행하여 PR 생성 | `/batch migrate src/ from Solid to React` |
-| `/debug [description]` | 세션 디버그 로그를 읽어 현재 세션 문제 해결 | `/debug` |
-| `/loop [interval] <prompt>` | 프롬프트를 간격에 따라 반복 실행 | `/loop 5m check if the deploy finished` |
-| `/claude-api` | Claude API/SDK 참조 자료 로드. `anthropic` 등 임포트 시 자동 활성화 | `/claude-api` |
+| Skill                       | 설명                                                          | 사용 예시                                     |
+| --------------------------- | ----------------------------------------------------------- | ----------------------------------------- |
+| `/simplify`                 | 변경된 코드를 재사용/품질/효율성 관점에서 검토 후 수정. 3개 검토 에이전트를 병렬 생성          | `/simplify focus on memory efficiency`    |
+| `/batch <instruction>`      | 대규모 변경을 병렬로 조율. 5~30개 단위로 분해 후 각각 격리된 worktree에서 실행하여 PR 생성 | `/batch migrate src/ from Solid to React` |
+| `/debug [description]`      | 세션 디버그 로그를 읽어 현재 세션 문제 해결                                   | `/debug`                                  |
+| `/loop [interval] <prompt>` | 프롬프트를 간격에 따라 반복 실행                                          | `/loop 5m check if the deploy finished`   |
+| `/claude-api`               | Claude API/SDK 참조 자료 로드. `anthropic` 등 임포트 시 자동 활성화         | `/claude-api`                             |
 
 ## 옵션 (Frontmatter 필드)
 
