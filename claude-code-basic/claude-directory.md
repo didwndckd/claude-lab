@@ -83,19 +83,19 @@ your-project/
 
 ### 글로벌 ~/.claude/ 하위 구조
 
-| 경로 | 설명 |
-|------|------|
-| `~/.claude.json` | 앱 상태, UI 설정, 개인 MCP 서버 |
-| `~/.claude/CLAUDE.md` | 모든 프로젝트에 적용되는 개인 지침 |
-| `~/.claude/settings.json` | 모든 프로젝트의 기본 설정 |
-| `~/.claude/keybindings.json` | 키보드 단축키 커스터마이징 |
-| `~/.claude/projects/` | 프로젝트별 자동 메모리 (Claude가 자동 관리) |
-| `~/.claude/rules/` | 모든 프로젝트에 적용되는 개인 규칙 |
-| `~/.claude/skills/` | 모든 프로젝트에서 사용 가능한 개인 스킬 |
-| `~/.claude/commands/` | 모든 프로젝트에서 사용 가능한 개인 커맨드 |
-| `~/.claude/agents/` | 모든 프로젝트에서 사용 가능한 개인 서브에이전트 |
-| `~/.claude/agent-memory/` | `memory: user` 서브에이전트의 크로스 프로젝트 메모리 |
-| `~/.claude/output-styles/` | 개인 출력 스타일 |
+| 경로                           | 설명                                  |
+| ---------------------------- | ----------------------------------- |
+| `~/.claude.json`             | 앱 상태, UI 설정, 개인 MCP 서버              |
+| `~/.claude/CLAUDE.md`        | 모든 프로젝트에 적용되는 개인 지침                 |
+| `~/.claude/settings.json`    | 모든 프로젝트의 기본 설정                      |
+| `~/.claude/keybindings.json` | 키보드 단축키 커스터마이징                      |
+| `~/.claude/projects/`        | 프로젝트별 자동 메모리 (Claude가 자동 관리)        |
+| `~/.claude/rules/`           | 모든 프로젝트에 적용되는 개인 규칙                 |
+| `~/.claude/skills/`          | 모든 프로젝트에서 사용 가능한 개인 스킬              |
+| `~/.claude/commands/`        | 모든 프로젝트에서 사용 가능한 개인 커맨드             |
+| `~/.claude/agents/`          | 모든 프로젝트에서 사용 가능한 개인 서브에이전트          |
+| `~/.claude/agent-memory/`    | `memory: user` 서브에이전트의 크로스 프로젝트 메모리 |
+| `~/.claude/output-styles/`   | 개인 출력 스타일                           |
 
 ## 옵션
 
@@ -109,15 +109,15 @@ your-project/
 
 ### settings.json
 
-| 키 | 설명 | 예시 |
-|----|------|------|
-| `permissions.allow` | 자동 허용할 도구/명령 | `["Bash(npm test *)"]` |
-| `permissions.deny` | 차단할 도구/명령 | `["Bash(rm -rf *)"]` |
-| `hooks` | 이벤트별 스크립트 실행 | PostToolUse, PreToolUse 등 |
-| `model` | 기본 모델 지정 | - |
-| `env` | 환경 변수 설정 | - |
-| `outputStyle` | 출력 스타일 선택 | - |
-| `statusLine` | 하단 상태 줄 커스터마이징 | - |
+| 키                   | 설명             | 예시                        |
+| ------------------- | -------------- | ------------------------- |
+| `permissions.allow` | 자동 허용할 도구/명령   | `["Bash(npm test *)"]`    |
+| `permissions.deny`  | 차단할 도구/명령      | `["Bash(rm -rf *)"]`      |
+| `hooks`             | 이벤트별 스크립트 실행   | PostToolUse, PreToolUse 등 |
+| `model`             | 기본 모델 지정       | -                         |
+| `env`               | 환경 변수 설정       | -                         |
+| `outputStyle`       | 출력 스타일 선택      | -                         |
+| `statusLine`        | 하단 상태 줄 커스터마이징 | -                         |
 
 ### rules/ frontmatter
 
@@ -360,13 +360,13 @@ config/secrets.json
 
 세션에서 실제로 무엇이 로드되었는지 다음 명령어로 확인할 수 있다.
 
-| 명령어 | 설명 |
-|--------|------|
-| `/context` | 토큰 사용 현황: 시스템 프롬프트, 메모리 파일, 스킬, MCP 도구, 메시지 |
-| `/memory` | 로드된 CLAUDE.md, rules 파일, 자동 메모리 항목 |
-| `/agents` | 설정된 서브에이전트와 그 설정 |
-| `/hooks` | 활성 hook 설정 |
-| `/mcp` | 연결된 MCP 서버와 상태 |
-| `/skills` | 프로젝트·사용자·플러그인 소스의 가용 스킬 |
-| `/permissions` | 현재 allow/deny 규칙 |
-| `/doctor` | 설치 및 설정 진단 |
+| 명령어            | 설명                                          |
+| -------------- | ------------------------------------------- |
+| `/context`     | 토큰 사용 현황: 시스템 프롬프트, 메모리 파일, 스킬, MCP 도구, 메시지 |
+| `/memory`      | 로드된 CLAUDE.md, rules 파일, 자동 메모리 항목          |
+| `/agents`      | 설정된 서브에이전트와 그 설정                            |
+| `/hooks`       | 활성 hook 설정                                  |
+| `/mcp`         | 연결된 MCP 서버와 상태                              |
+| `/skills`      | 프로젝트·사용자·플러그인 소스의 가용 스킬                     |
+| `/permissions` | 현재 allow/deny 규칙                            |
+| `/doctor`      | 설치 및 설정 진단                                  |
