@@ -146,15 +146,15 @@ SessionStart → InstructionsLoaded → UserPromptSubmit
 
 모든 이벤트에 공통으로 전달되는 입력 필드:
 
-| 필드 | 설명 |
-|------|------|
-| `session_id` | 현재 세션 ID |
-| `transcript_path` | 대화 기록 파일 경로 |
-| `cwd` | 현재 작업 디렉토리 |
+| 필드                | 설명                                                                               |
+| ----------------- | -------------------------------------------------------------------------------- |
+| `session_id`      | 현재 세션 ID                                                                         |
+| `transcript_path` | 대화 기록 파일 경로                                                                      |
+| `cwd`             | 현재 작업 디렉토리                                                                       |
 | `permission_mode` | 권한 모드 (`default`, `plan`, `acceptEdits`, `auto`, `dontAsk`, `bypassPermissions`) |
-| `hook_event_name` | 이벤트 이름 |
-| `agent_id` | 서브에이전트 ID (해당 시) |
-| `agent_type` | 에이전트 타입 (해당 시) |
+| `hook_event_name` | 이벤트 이름                                                                           |
+| `agent_id`        | 서브에이전트 ID (해당 시)                                                                 |
+| `agent_type`      | 에이전트 타입 (해당 시)                                                                   |
 
 ### 이벤트별 추가 입력
 
@@ -295,34 +295,34 @@ Hook이 반환할 수 있는 JSON 필드:
 
 ## 주요 이벤트 요약
 
-| 이벤트 | 시점 | 주요 용도 |
-|--------|------|-----------|
-| `SessionStart` | 세션 시작/재개 | 환경 설정, 컨텍스트 주입 |
-| `UserPromptSubmit` | 사용자 입력 처리 전 | 입력 검증, 차단 |
-| `PreToolUse` | 도구 실행 전 | 권한 제어, 입력 수정 |
-| `PermissionRequest` | 권한 대화상자 표시 전 | 자동 허용/거부, 권한 규칙 추가 |
-| `PostToolUse` | 도구 성공 후 | 추가 컨텍스트, MCP 출력 수정 |
-| `PostToolUseFailure` | 도구 실패 후 | 오류 피드백 |
-| `Stop` | Claude 응답 완료 시 | 중지 방지 (`decision: "block"`) |
-| `Notification` | 알림 발생 시 | 컨텍스트 추가 가능 |
-| `CwdChanged` | 작업 디렉토리 변경 | 파일 감시 경로 업데이트 |
-| `FileChanged` | 감시 파일 수정 | 동적 모니터링 |
-| `ConfigChange` | 설정 파일 변경 | 변경 차단 가능 |
-| `PermissionDenied` | auto 모드 분류기 거부 시 | 재시도 허용 (`retry: true`) |
-| `SubagentStart` | 서브에이전트 생성 시 | 컨텍스트 주입 |
-| `SubagentStop` | 서브에이전트 종료 시 | 중지 방지 가능 |
-| `StopFailure` | API 오류로 턴 종료 시 | 로깅 전용 |
-| `TaskCreated` | 태스크 생성 시 | 생성 차단 가능 |
-| `TaskCompleted` | 태스크 완료 시 | 완료 차단 가능 |
-| `TeammateIdle` | 팀원 유휴 시 | 유휴 방지 가능 |
-| `PreCompact` | 컨텍스트 압축 전 | 관찰 전용 |
-| `PostCompact` | 컨텍스트 압축 후 | 관찰 전용 |
-| `InstructionsLoaded` | CLAUDE.md/rules 로드 시 | 관찰 전용 |
-| `WorktreeCreate` | Git worktree 생성 시 | 경로 반환 |
-| `WorktreeRemove` | Git worktree 제거 시 | 관찰 전용 |
-| `Elicitation` | MCP 서버 사용자 입력 요청 시 | 자동 응답 가능 |
-| `ElicitationResult` | 사용자 응답 시 | 응답 재정의 가능 |
-| `SessionEnd` | 세션 종료 | 정리 작업 (timeout 1.5초) |
+| 이벤트                  | 시점                   | 주요 용도                       |
+| -------------------- | -------------------- | --------------------------- |
+| `SessionStart`       | 세션 시작/재개             | 환경 설정, 컨텍스트 주입              |
+| `UserPromptSubmit`   | 사용자 입력 처리 전          | 입력 검증, 차단                   |
+| `PreToolUse`         | 도구 실행 전              | 권한 제어, 입력 수정                |
+| `PermissionRequest`  | 권한 대화상자 표시 전         | 자동 허용/거부, 권한 규칙 추가          |
+| `PostToolUse`        | 도구 성공 후              | 추가 컨텍스트, MCP 출력 수정          |
+| `PostToolUseFailure` | 도구 실패 후              | 오류 피드백                      |
+| `Stop`               | Claude 응답 완료 시       | 중지 방지 (`decision: "block"`) |
+| `Notification`       | 알림 발생 시              | 컨텍스트 추가 가능                  |
+| `CwdChanged`         | 작업 디렉토리 변경           | 파일 감시 경로 업데이트               |
+| `FileChanged`        | 감시 파일 수정             | 동적 모니터링                     |
+| `ConfigChange`       | 설정 파일 변경             | 변경 차단 가능                    |
+| `PermissionDenied`   | auto 모드 분류기 거부 시     | 재시도 허용 (`retry: true`)      |
+| `SubagentStart`      | 서브에이전트 생성 시          | 컨텍스트 주입                     |
+| `SubagentStop`       | 서브에이전트 종료 시          | 중지 방지 가능                    |
+| `StopFailure`        | API 오류로 턴 종료 시       | 로깅 전용                       |
+| `TaskCreated`        | 태스크 생성 시             | 생성 차단 가능                    |
+| `TaskCompleted`      | 태스크 완료 시             | 완료 차단 가능                    |
+| `TeammateIdle`       | 팀원 유휴 시              | 유휴 방지 가능                    |
+| `PreCompact`         | 컨텍스트 압축 전            | 관찰 전용                       |
+| `PostCompact`        | 컨텍스트 압축 후            | 관찰 전용                       |
+| `InstructionsLoaded` | CLAUDE.md/rules 로드 시 | 관찰 전용                       |
+| `WorktreeCreate`     | Git worktree 생성 시    | 경로 반환                       |
+| `WorktreeRemove`     | Git worktree 제거 시    | 관찰 전용                       |
+| `Elicitation`        | MCP 서버 사용자 입력 요청 시   | 자동 응답 가능                    |
+| `ElicitationResult`  | 사용자 응답 시             | 응답 재정의 가능                   |
+| `SessionEnd`         | 세션 종료                | 정리 작업 (timeout 1.5초)        |
 
 ## 사용 예시
 
