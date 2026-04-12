@@ -1,6 +1,7 @@
 # Hooks
 
-> 원본: [https://code.claude.com/docs/ko/hooks](https://code.claude.com/docs/ko/hooks), [https://code.claude.com/docs/ko/hooks-guide](https://code.claude.com/docs/ko/hooks-guide)
+> https://code.claude.com/docs/ko/hooks
+> https://code.claude.com/docs/ko/hooks-guide
 
 ## 기본 개념
 
@@ -126,20 +127,20 @@ SessionStart → InstructionsLoaded → UserPromptSubmit
 
 ### Matcher 패턴
 
-| 이벤트                           | 매칭 대상     | 예시                                                                                 |
-| ----------------------------- | --------- | ---------------------------------------------------------------------------------- |
-| Tool 이벤트                      | 도구 이름     | `Bash`, `Edit\|Write`, `mcp__.*`                                                   |
-| SessionStart                  | 세션 소스     | `startup`, `resume`, `clear`, `compact`                                            |
-| SessionEnd                    | 종료 사유     | `clear`, `resume`, `logout`, `prompt_input_exit`                                   |
-| Notification                  | 알림 타입     | `permission_prompt`, `idle_prompt`                                                 |
-| SubagentStart/Stop            | 에이전트 타입   | `Bash`, `Explore`, `Plan`                                                          |
-| ConfigChange                  | 설정 소스     | `user_settings`, `project_settings`, `local_settings`, `policy_settings`, `skills` |
-| FileChanged                   | 파일명 패턴    | `.envrc`, `.env`                                                                   |
-| StopFailure                   | 오류 타입     | `rate_limit`, `authentication_failed`, `billing_error`                             |
-| PreCompact/PostCompact        | 압축 트리거    | `manual`, `auto`                                                                   |
-| InstructionsLoaded            | 로드 사유     | `session_start`, `nested_traversal`, `include`, `path_glob_match`, `compact`       |
-| Elicitation/ElicitationResult | MCP 서버 이름 | 설정된 MCP 서버명                                                                        |
-| UserPromptSubmit, Stop, TeammateIdle, TaskCreated, TaskCompleted, WorktreeCreate, WorktreeRemove, CwdChanged | matcher 미지원 | 모든 발생에서 항상 실행 |
+| 이벤트                                                                                                          | 매칭 대상       | 예시                                                                                 |
+| ------------------------------------------------------------------------------------------------------------ | ----------- | ---------------------------------------------------------------------------------- |
+| Tool 이벤트                                                                                                     | 도구 이름       | `Bash`, `Edit\|Write`, `mcp__.*`                                                   |
+| SessionStart                                                                                                 | 세션 소스       | `startup`, `resume`, `clear`, `compact`                                            |
+| SessionEnd                                                                                                   | 종료 사유       | `clear`, `resume`, `logout`, `prompt_input_exit`                                   |
+| Notification                                                                                                 | 알림 타입       | `permission_prompt`, `idle_prompt`                                                 |
+| SubagentStart/Stop                                                                                           | 에이전트 타입     | `Bash`, `Explore`, `Plan`                                                          |
+| ConfigChange                                                                                                 | 설정 소스       | `user_settings`, `project_settings`, `local_settings`, `policy_settings`, `skills` |
+| FileChanged                                                                                                  | 파일명 패턴      | `.envrc`, `.env`                                                                   |
+| StopFailure                                                                                                  | 오류 타입       | `rate_limit`, `authentication_failed`, `billing_error`                             |
+| PreCompact/PostCompact                                                                                       | 압축 트리거      | `manual`, `auto`                                                                   |
+| InstructionsLoaded                                                                                           | 로드 사유       | `session_start`, `nested_traversal`, `include`, `path_glob_match`, `compact`       |
+| Elicitation/ElicitationResult                                                                                | MCP 서버 이름   | 설정된 MCP 서버명                                                                        |
+| UserPromptSubmit, Stop, TeammateIdle, TaskCreated, TaskCompleted, WorktreeCreate, WorktreeRemove, CwdChanged | matcher 미지원 | 모든 발생에서 항상 실행                                                                      |
 
 ## JSON 입력 형식
 
